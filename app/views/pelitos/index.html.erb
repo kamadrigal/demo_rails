@@ -1,0 +1,29 @@
+<h1>Listing pelitos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Forma</th>
+      <th>Fecha</th>
+      <th>Grosor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pelitos.each do |pelito| %>
+      <tr>
+        <td><%= pelito.forma %></td>
+        <td><%= pelito.fecha %></td>
+        <td><%= pelito.grosor %></td>
+        <td><%= link_to 'Show', pelito %></td>
+        <td><%= link_to 'Edit', edit_pelito_path(pelito) %></td>
+        <td><%= link_to 'Destroy', pelito, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pelito', new_pelito_path %>

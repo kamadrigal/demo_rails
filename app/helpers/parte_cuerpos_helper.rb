@@ -1,0 +1,2 @@
+module ParteCuerposHelper
+end

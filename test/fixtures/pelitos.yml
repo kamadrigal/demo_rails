@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  forma: MyString
+  fecha: 2014-11-01
+  grosor: 1
+
+two:
+  forma: MyString
+  fecha: 2014-11-01
+  grosor: 1

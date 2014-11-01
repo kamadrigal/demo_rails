@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Forma:</strong>
+  <%= @pelito.forma %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @pelito.fecha %>
+</p>
+
+<p>
+  <strong>Grosor:</strong>
+  <%= @pelito.grosor %>
+</p>
+
+<%= link_to 'Edit', edit_pelito_path(@pelito) %> |
+<%= link_to 'Back', pelitos_path %>
